@@ -6,6 +6,7 @@ import GonHomeTop from './pages/gonHomeTop';
 import IzdeleniyaHomeTop from './pages/izdeleniyaHomeTop';
 import FonatHomeTop from './pages/fonatHomeTop';
 import SopustvuyuwiyHomeTop from './pages/sopustvuyuwiyHomeTop';
+import Novinok from './components/novinok';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/izdeleniyaa" element={<IzdeleniyaHomeTop/>} />
         <Route path="/fonari" element={<FonatHomeTop/>} />
         <Route path="/sopustvuyushiy" element={<SopustvuyuwiyHomeTop/>} />
+        <Route path="/novinok" element={<Novinok/> } />
       </Routes>
     </>
   )
