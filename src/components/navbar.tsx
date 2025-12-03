@@ -1,4 +1,4 @@
-import { Search, MapPin, Heart, ShoppingCart, ChevronDown, UserRound } from "lucide-react";
+import { Search, MapPin, Heart, ShoppingCart, ChevronDown, UserRound, Phone } from "lucide-react";
 import logo from "../assets/logo.svg";
 import { Link } from "react-router-dom";
 import { useSearch } from "@/context/SearchContext";
@@ -53,16 +53,24 @@ const Navbar = () => {
                     </div>
                     <div className="flex items-center gap-8 text-sm">
                         <div className="flex items-center gap-1 text-gray-700">
-                            <MapPin size={18} className="text-gray-600" />
+                            <MapPin size={18} className="text-gray-600" />  
                             <span className="mont">Москва</span>
                             <ChevronDown size={16} />
                         </div>
                         <div className="flex flex-col leading-tight">
-                            <span className="font-semibold">8-800-777-49-67</span>
-                            <button className="mont text-[#d6a65a] hover:text-[#c99743] text-xs">
+                            <a  className="font-semibold mont flex items-center gap-2">
+                                <Phone size={20} />
+                                +998 90 123 45 67
+                            </a>
+
+                            <a
+                                href="tel:+998901234567"
+                                className="mont text-[#d6a65a] text-center pt-2 hover:text-[#c99743] text-xs cursor-pointer"
+                            >
                                 Заказать звонок
-                            </button>
+                            </a>
                         </div>
+
                         <Heart size={22} className="text-gray-700 cursor-pointer" />
                         <div className="flex items-center gap-1 cursor-pointer">
                             <ShoppingCart size={22} className="text-gray-700" />

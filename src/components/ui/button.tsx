@@ -9,6 +9,7 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
+        kere:'cursor-pointer',
         website: "bg-[#E1A22F] hover:bg-[#cd8f1f] text-white text-[18px] font-medium rounded-[6px] shadow-md transition-all duration-200 hover:shadow-[0_0_18px_rgba(225,162,47,0.55)] cursor-pointer",
         default: "bg-primary text-primary-foreground hover:bg-primary/90",
         destructive:

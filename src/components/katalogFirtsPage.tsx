@@ -8,10 +8,10 @@ import { Button } from './ui/button'
 export const KatalogFirtsPage = () => {
     return (
         <div
-            className="w-full h-screen bg-cover bg-center bg-[#1E2122] px-[90px] container mx-auto pt-11 mb-[100px]"
+            className="w-full h-[756px] bg-cover bg-center bg-[#1E2122] px-[90px] pt-11 mb-[100px]"
             style={{ backgroundImage: `url(${background})` }}
-        >
-            <div>
+        >   
+            <div className='container mx-auto'>
                 <h1 className='pb-[15px]  font-bold text-4xl text-white mont'>
                     Интернет магазин сертифицированных
                 </h1>

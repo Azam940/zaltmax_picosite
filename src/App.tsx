@@ -7,6 +7,7 @@ import IzdeleniyaHomeTop from './pages/izdeleniyaHomeTop';
 import FonatHomeTop from './pages/fonatHomeTop';
 import SopustvuyuwiyHomeTop from './pages/sopustvuyuwiyHomeTop';
 import Novinok from './components/novinok';
+import Footer from './components/footer';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/sopustvuyushiy" element={<SopustvuyuwiyHomeTop/>} />
         <Route path="/novinok" element={<Novinok/> } />
       </Routes>
+      <Footer/>
     </>
   )
 }

@@ -3,6 +3,7 @@ import { KatalogFirtsPage } from '../components/katalogFirtsPage'
 import Bestsellers from '@/components/KatalogBestsellers'
 import KatalogSkidka from '@/components/katalogSkidka'
 import KatalogNew from '@/components/katalogNew'
+import KatalogArticles from '@/components/katalogArticles'
 
 const KatalogHomeTop = () => {
   return (
@@ -12,6 +13,7 @@ const KatalogHomeTop = () => {
       <Bestsellers/>
       <KatalogSkidka/>
       <KatalogNew/>
+      <KatalogArticles/>
     </div>
   )
 }
