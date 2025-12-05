@@ -8,196 +8,158 @@ import watsapp from '@/assets/watsapp.svg'
 
 const Footer = () => {
   return (
-    <div>
-      <div className='w-full h-[331px] mt-[118px] text-white bg-linear-to-br from-[#160c0c] to-[#341111]'>
-        <h1 className='text-center pt-[60px] mont font-bold text-3xl tracking-[5%] text-[#E8AA31]'>
+    <div className="w-full text-white bg-[#141414] mt-20">
+
+      <div className="w-full bg-linear-to-br from-[#160c0c] to-[#341111] text-center py-[60px] px-4">
+        <h1 className="mont font-bold text-2xl sm:text-3xl lg:text-4xl text-[#E8AA31]">
           Златоустовские ножи интернет-магазин "ЗЛАТМАКС"
         </h1>
-        <p className='font-medium text-lg tracking-[3%] text-white pt-[30px] text-center pb-[60px]'>
-          Наш интернет-магазин "ЗЛАТМАКС" предлагает Вам ножи очень высокого качества из города оружейников - Златоуста.
-          Златоустовские ножи известны и <br /> популярны среди потребителей как на российским рынке, так и за рубежом: ножи охотничьи, хозяйственные,
-          туристические, рыбацкие, складные и <br /> метательные. Нож Златоуста - это идеальный друг и товарищ в повседневной жизни и в экстремальных ситуациях.
-          На многую продукцию распространяется <br /> гарантия до 10 лет - это один из главных показателей качества. Для Вас на нашем сайте "zlatmax" предложен огромный
-          ассортимент Златоустовских ножей. <br /> Наши менеджеры помогут определиться и подобрать самый лучший Златоустовский нож, ориентируясь на Ваши пожелания
+
+        <p className="font-medium mt-6 text-sm sm:text-base leading-6 sm:leading-7 md:leading-8 max-w-[1200px] mx-auto px-2">
+         Наш интернет-магазин "ЗЛАТМАКС" предлагает Вам ножи очень высокого качества из города оружейников - Златоуста. Златоустовские ножи известны и популярны среди потребителей как на российским рынке, так и за рубежом: ножи охотничьи, хозяйственные, туристические, рыбацкие, складные и метательные. Нож Златоуста - это идеальный друг и товарищ в повседневной жизни и в экстремальных ситуациях. На многую продукцию распространяется гарантия до 10 лет - это один из главных показателей качества. Для Вас на нашем сайте "zlatmax" предложен огромный ассортимент Златоустовских ножей. Наши менеджеры помогут определиться и подобрать самый лучший Златоустовский нож, ориентируясь на Ваши пожелания.
         </p>
       </div>
-      <div className="pt-[102px] bg-[#141414]">
-        <div className="flex justify-center gap-[133px] text-white ">
+
+      <div className="pt-[60px] pb-10 w-full max-w-[1440px] mx-auto px-4">
+
+        <div className="
+      grid 
+      xs:grid-cols-1 
+      sm:grid-cols-2 
+      md:grid-cols-2 
+      lg:grid-cols-4 
+      gap-10 
+      justify-between text-white
+    ">
+          {/* COLUMN 1 */}
           <ul>
-            <p className="pb-[23px] font-semibold text-lg tracking-[0%] mont">ИНФОРМАЦИЯ</p>
-            <li className="pb-5 mont">
-              <a href="#">
-                Златоустовские ножи <br />
-                в Москве и Московской <br />
-                области
-              </a>
-            </li>
-            <li className="pb-5 mont">
-              <a href="#">
-                Ножевые стали
-              </a>
-            </li>
-            <li className="pb-5 mont">
-              <a href="#">
-                О нас
-              </a>
-            </li>
-            <li className="pb-5 mont">
-              <a href="#">
-                Условия оплаты <br />
-                и доставки
-              </a>
-            </li>
-            <li className="pb-5 mont">
-              <a href="#">
-                Политика <br />
-                конфиденциальности
-              </a>
-            </li>
+            <p className="pb-4 font-semibold text-lg">ИНФОРМАЦИЯ</p>
+            <li className="pb-3">Златоустовские ножи<br />в Москве и области</li>
+            <li className="pb-3">Ножевые стали</li>
+            <li className="pb-3">О нас</li>
+            <li className="pb-3">Условия оплаты и доставки</li>
+            <li className="pb-3">Политика конфиденциальности</li>
           </ul>
+
+          {/* COLUMN 2 */}
           <ul>
-            <p className="pb-[23px] font-semibold text-lg tracking-[0%] mont">СЛУЖБА ПОДДЕРЖКИ</p>
-            <li className="pb-5 mont">
-              <a href="#">
-                Контактная информация
-              </a>
-            </li>
-            <li className="pb-5 mont">
-              <a href="#">
-                Возврат товара
-              </a>
-            </li>
-            <li className="pb-5 mont">
-              <a href="#">
-                Карта сайта
-              </a>
-            </li>
+            <p className="pb-4 font-semibold text-lg">СЛУЖБА ПОДДЕРЖКИ</p>
+            <li className="pb-3">Контактная информация</li>
+            <li className="pb-3">Возврат товара</li>
+            <li className="pb-3">Карта сайта</li>
           </ul>
+
+          {/* COLUMN 3 */}
           <ul>
-            <p className="pb-[23px] font-semibold text-lg tracking-[0%] mont">ДОПОЛНИТЕЛЬНО</p>
-            <li className="pb-5 mont">
-              <a href="#">
-                Подарочные сертификаты
-              </a>
-            </li>
-            <li className="pb-5 mont">
-              <a href="#">
-                Партнеры
-              </a>
-            </li>
-            <li className="mont">
-              <a href="#">
-                Товары со скидкой
-              </a>
-            </li>
+            <p className="pb-4 font-semibold text-lg">ДОПОЛНИТЕЛЬНО</p>
+            <li className="pb-3">Подарочные сертификаты</li>
+            <li className="pb-3">Партнеры</li>
+            <li className="pb-3">Товары со скидкой</li>
           </ul>
+
+          {/* COLUMN 4 */}
           <ul>
-            <p className="pb-[23px] font-semibold text-lg tracking-[0%] mont">ЛИЧНЫЙ КАБИНЕТ</p>
-            <li className="pb-5 mont">
-              <a href="#">
-                Личный кабинет
-              </a>
-            </li>
-            <li className="pb-5 mont">
-              <a href="#">
-                История заказов
-              </a>
-            </li>
-            <li className="pb-5 mont">
-              <a href="#">
-                Мои закладки
-              </a>
-            </li>
-            <li className="pb-5 mont">
-              <a href="#">
-                Рассылка новостей
-              </a>
-            </li>
+            <p className="pb-4 font-semibold text-lg">ЛИЧНЫЙ КАБИНЕТ</p>
+            <li className="pb-3">Личный кабинет</li>
+            <li className="pb-3">История заказов</li>
+            <li className="pb-3">Мои закладки</li>
+            <li className="pb-3">Рассылка новостей</li>
           </ul>
         </div>
-        <hr className="text-white mt-2.5" />
-        <div className="pt-9 text-white flex  gap-[67px] justify-center">
-          <ul>
-            <p className='pb-[31px]'>КОНТАКТЫ</p>
-            <li className='pb-[15px]'>
-              <a className='flex gap-4' href="tel:+88007774967">
-                <img className='w-6' src={tel} alt="" />
-                <span>8 (800) 777-49-67</span>
-              </a>
-            </li>
-            <li className='pb-[15px]'>
-              <a className='flex gap-4' href="">
-                <Clock3 color="white" />
-                <span>Пн-Пт <br />
-                  7:00 - 16:00 (МСК)</span>
-              </a>
-            </li>
-            <li className='pb-[15px]'>
-              <a className='flex gap-4' href="">
-                <MapPin color="white" />
-                <span>
-                  Златоуст, <br />
-                  ул. Шоссейная, <br />
-                  д. 1, офис «6Б»
-                </span>
-              </a>
-            </li>
-            <li className='pb-[15px]'>
-              <a className='flex gap-4' href="">
-                <Mail color="white" />
-                <span>info@zlatmax.ru</span>
-              </a>
-            </li>
-            <div className='flex gap-[21px] pt-[30px]'>
-              <img src={fecebook} alt="" />
-              <img src={telefon} alt="" />
-              <img src={telegram} alt="" />
-              <img src={watsapp} alt="" />
-            </div>
-          </ul>
-          <ul>
-            <p className='pb-[30px]'>ПОЛЕЗНЫЕ ССЫЛКИ</p>
-            <li>
-              <a href="">Способы оплаты и доставки</a>
-            </li>
-          </ul>
-          <ul>
-            <p className='pb-[30px]'>НАША ГАРАНТИЯ</p>
-            <li>
 
-              <a className='' href=""> Недовольны своей покупкой? <br />
-                Вы можете вернуть ее в течении <br />
-                30 дней с даты получения, <br />
-                согласно <b className='text-[#E8AA31]'>нашим правилам</b></a>
-            </li>
-          </ul>
-          <ul>
-            <p className='pb-[15px]'>НОВОСТНАЯ РАССЫЛКА</p>
-            <li className='pb-[26px]'>
-              <a href="">Подпишитесь прямо сейчас!</a>
-            </li>
-            <div className='flex items-center'>
-              <input placeholder='example@gmail.com' className='border rounded-l-xl w-[350px] h-[50px] pl-6' type="email" />
-              <Button variant={'kere'} className='rounded-r-xl w-[50px] h-[50px] opacity-100 bg-[#E8AA31]'>
-                <ChevronRight className='w-[50px]' color="white" />
+        <hr className="border-white/20 my-8" />
+
+        {/* LOWER BLOCK */}
+        <div
+          className="
+      grid 
+      xs:grid-cols-1 
+      sm:grid-cols-2 
+      md:grid-cols-2 
+      lg:grid-cols-4 
+      gap-10
+      "
+        >
+          {/* CONTACTS */}
+          <div>
+            <p className="pb-4 font-semibold">КОНТАКТЫ</p>
+
+            <a className="flex gap-3 pb-3" href="tel:+88007774967">
+              <img className="w-6" src={tel} />
+              <span>8 (800) 777-49-67</span>
+            </a>
+
+            <div className="flex gap-3 pb-3">
+              <Clock3 />
+              <span>Пн-Пт<br />7:00 - 16:00 (МСК)</span>
+            </div>
+
+            <div className="flex gap-3 pb-3">
+              <MapPin />
+              <span>Златоуст,<br />ул. Шоссейная,<br />д. 1, офис «6Б»</span>
+            </div>
+
+            <div className="flex gap-3 pb-6">
+              <Mail />
+              <span>info@zlatmax.ru</span>
+            </div>
+
+            <div className="flex gap-4">
+              <img src={fecebook} />
+              <img src={telefon} />
+              <img src={telegram} />
+              <img src={watsapp} />
+            </div>
+          </div>
+
+          {/* LINKS */}
+          <div>
+            <p className="pb-4 font-semibold">ПОЛЕЗНЫЕ ССЫЛКИ</p>
+            <a>Способы оплаты и доставки</a>
+          </div>
+
+          {/* GUARANTEE */}
+          <div>
+            <p className="pb-4 font-semibold">НАША ГАРАНТИЯ</p>
+            <p>
+              Недовольны покупкой? Вы можете вернуть её в течение 30 дней согласно{' '}
+              <span className="text-[#E8AA31]">нашим правилам</span>.
+            </p>
+          </div>
+
+          {/* NEWSLETTER */}
+          <div>
+            <p className="pb-4 font-semibold">НОВОСТНАЯ РАССЫЛКА</p>
+            <p className="pb-4">Подпишитесь прямо сейчас!</p>
+
+            <div className="flex">
+              <input
+                placeholder="example@gmail.com"
+                className="border rounded-l-xl w-full h-[50px] pl-4 text-black"
+              />
+              <Button className="rounded-r-xl w-[50px] h-[50px] bg-[#E8AA31]">
+                <ChevronRight color="white" />
               </Button>
             </div>
-            <li className='pt-[22px]'>
-              <a href="">Я прочитал Условия соглашения и <br />
-                согласен с условиями </a>
-            </li>
-          </ul>
+
+            <p className="pt-4 text-sm">
+              Я прочитал Условия соглашения и согласен с условиями
+            </p>
+          </div>
         </div>
-        <hr className='text-white mt-[31px]' />
-        <div className='flex text-white pt-[30px] justify-between pl-[120px] pb-[50px]'>
-          <p>Все материалы, размещенные на сайте, носят справочный характер и не являются <br />
-            публичной офертой, определяемойположениями Статьи 437 Гражданского кодекса Российской Федерации. <br />
-            При копировании материалов гиперссылка на www.zlatmax.ru обязательна!</p>
-          <p className='pr-[120px]'>Златоустовские ножи www.zlatmax.ru ©</p>
+
+        <hr className="border-white/20 my-8" />
+
+        <div className="text-sm flex xs:flex-col lg:flex-row justify-between px-4 pb-10 gap-6">
+          <p>
+            Все материалы на сайте носят справочный характер... <br />
+            При копировании материалов ссылка на сайт обязательна!
+          </p>
+          <p>Златоустовские ножи www.zlatmax.ru ©</p>
         </div>
       </div>
-
     </div>
+
 
   )
 }
